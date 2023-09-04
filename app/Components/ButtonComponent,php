@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Components;
+
+class ButtonComponent extends Component
+{
+    protected function view()
+    {
+        $text = $this->data['text'] ?? 'Click me';
+        $style = $this->data['style'] ?? '';
+
+        echo '<button style="' . $style . '">' . $text . '</button>';
+    }
+}
