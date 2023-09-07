@@ -6,8 +6,15 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Components\\ButtonComponent' => $baseDir . '/app/Components/ButtonComponent.php',
+    'App\\Components\\Component' => $baseDir . '/app/Components/Component.php',
+    'App\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
+    'App\\Controllers\\ErrorController' => $baseDir . '/app/Controllers/ErrorController.php',
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
     'App\\Models\\BaseModel' => $baseDir . '/app/Models/BaseModel.php',
-    'App\\Models\\ExampleModel' => $baseDir . '/app/Models/ExampleModel.php',
+    'App\\Models\\HomeModel' => $baseDir . '/app/Models/HomeModel.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Core\\Database\\Connection' => $baseDir . '/core/Database/Connection.php',
+    'Core\\FrontController' => $baseDir . '/core/FrontController.php',
+    'Core\\Router' => $baseDir . '/core/Router.php',
 );

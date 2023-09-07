@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitdf0e3945719bcfcc57666cc0e0fb8729
 {
     public static $prefixLengthsPsr4 = array (
+        'C' => 
+        array (
+            'Core\\' => 5,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,6 +18,10 @@ class ComposerStaticInitdf0e3945719bcfcc57666cc0e0fb8729
     );
 
     public static $prefixDirsPsr4 = array (
+        'Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -21,10 +29,17 @@ class ComposerStaticInitdf0e3945719bcfcc57666cc0e0fb8729
     );
 
     public static $classMap = array (
+        'App\\Components\\ButtonComponent' => __DIR__ . '/../..' . '/app/Components/ButtonComponent.php',
+        'App\\Components\\Component' => __DIR__ . '/../..' . '/app/Components/Component.php',
+        'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
+        'App\\Controllers\\ErrorController' => __DIR__ . '/../..' . '/app/Controllers/ErrorController.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
         'App\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/Models/BaseModel.php',
-        'App\\Models\\ExampleModel' => __DIR__ . '/../..' . '/app/Models/ExampleModel.php',
+        'App\\Models\\HomeModel' => __DIR__ . '/../..' . '/app/Models/HomeModel.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/Database/Connection.php',
+        'Core\\FrontController' => __DIR__ . '/../..' . '/core/FrontController.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

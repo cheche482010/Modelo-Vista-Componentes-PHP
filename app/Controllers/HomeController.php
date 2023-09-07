@@ -2,16 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Models\ExampleModel;
-
-class HomeController
+class HomeController extends BaseController
 {
     public function index()
     {
-        $model = new ExampleModel();
-        $data = $model->getAll();
-
-        // Cargar la vista con los datos
-        // ...
+       echo "string";
     }
 }

@@ -2,12 +2,12 @@
 
 namespace Core;
 
-class FrontController
+class FrontController 
 {
     public function __construct()
     {
-        // Configurar el enrutador
+        $url = $_GET['url'] ?? '';
         $router = new Router();
-        $router->route($_SERVER['REQUEST_URI']);
+        $router->route($url);
     }
 }
